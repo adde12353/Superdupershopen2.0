@@ -19,7 +19,7 @@ const AdminPage = () => {
     users && token && users.forEach(data => {
         if(data.role === "admin"){
             const id = data.id
-            if ( id == userId){ //Need to be a number
+            if ( id === userId){ //Need to be a number
              setIsAdmin(true)
             }
         }

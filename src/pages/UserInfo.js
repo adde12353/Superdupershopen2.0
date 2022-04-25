@@ -12,7 +12,7 @@ const UserInfo = () => {
     return (  
 
         <div>
-        {users && token && users.filter((data) => data.id == userId).map(data =>(
+        {users && token && users.filter((data) => data.id === userId).map(data =>(//kolla kan va trasig
             <div key={data.id}>
                 <h2>Välkommen {`${data.name.firstname} ${data.name.firstname}`}</h2>
                 <p>{`Ditt telefonnummer: ${data.phone}`}</p>
