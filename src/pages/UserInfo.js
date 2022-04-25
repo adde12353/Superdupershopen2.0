@@ -5,14 +5,14 @@ import usersState from "../../src/stores/users";
 const UserInfo = () => {
     const users = useRecoilValue(usersState)
     const token = localStorage.getItem("token")
-    const userId = localStorage.getItem("id")
+    const userId = parseInt(localStorage.getItem("id"))
 
     
 
     return (  
 
         <div>
-        {users && token && users.filter((data) => data.id === userId).map(data =>(//kolla kan va trasig
+        {users && token && users.filter((data) => parseInt(data.id) === userId).map(data =>(//kolla kan va trasig
             <div key={data.id}>
                 <h2>Välkommen {`${data.name.firstname} ${data.name.firstname}`}</h2>
                 <p>{`Ditt telefonnummer: ${data.phone}`}</p>

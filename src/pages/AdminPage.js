@@ -8,7 +8,7 @@ const AdminPage = () => {
     const users = useRecoilValue(usersState)
 
     const token = localStorage.getItem("token")
-    const userId = localStorage.getItem("id")
+    const userId = parseInt(localStorage.getItem("id"))
 
 
     const [isAdmin, setIsAdmin] =useState(false)
@@ -18,7 +18,7 @@ const AdminPage = () => {
    useEffect(() => {
     users && token && users.forEach(data => {
         if(data.role === "admin"){
-            const id = data.id
+            const id = parseInt(data.id)
             if ( id === userId){ //Need to be a number
              setIsAdmin(true)
             }
