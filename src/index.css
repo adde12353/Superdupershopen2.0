@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  color: yellowgreen;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.links {
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.links:hover {
+  color: yellowgreen;
+}
+
+.product-images {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.produkt-lista {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+
+.produkt-lista,
+.varukorg {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+
+}
+
+
+h2,
+p,
+button {
+  padding: 8px;
+}
+
+.varukorg-btn {
+  background-color: rgba(153, 205, 50, 0.541);
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.list-links {
+  text-decoration: none;
+}
+
+/*Varukorg*/
+
+.Varukorg {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.produkt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.small-img {
+  width: 80px;
+  height: 80px;
+}
+.bild-namn {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.add-remove-btn {
+  font-size: 22px;
+  width: 30px;
+}
+
+.total-pris {
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.varukorgs-pris {
+  margin-left: 10px;
+}
+
+.single-produkt {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.produkt-bild,
+.produkt-text {
+  width: 50%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.product-cards{
+  width: 200px;
+  margin: 5px;
+}
+
+.product-cards img{
+  width: 200px;
+  height: 250px;
+}
+
+.product-cards h2{
+  font-size: 18px;
+  
+}
+
+.product-gallery{
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.användare{
+  display: flex;
+  border: 1px solid black;
+border-radius: 5px;
+text-align: left;
+flex-direction: column;
+width: 250px;
+margin-bottom: 30px;
+
+}
+
+.användare-lista{
+  margin: auto;
+  display: flex;
+max-width: 900px;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.sign-up-form label{
+  margin: auto;
+  width: 50%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.sign-up-form input{
+  margin: auto;
+  width: 50%;
+  
+}
+
+
+.sign-up-form button{
+  width: 50%;
+margin: 30px auto;
+}
